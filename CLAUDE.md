@@ -1,178 +1,215 @@
-# LLM Wiki — Schema & Operating Instructions
+# Segundo Cérebro — Schema & Instruções de Operação
 
-This is the schema file. It defines the structure, conventions, and workflows for this wiki. Read it at the start of every session. Evolve it collaboratively with the user as the domain matures.
+Leia este arquivo no início de cada sessão. Ele define a estrutura, convenções e fluxos de trabalho do wiki. Evolua-o junto com o usuário conforme o sistema amadurece.
 
 ---
 
-## Repository Layout
+## Estrutura do Repositório
 
 ```
 /
-├── CLAUDE.md          ← this file (schema)
-├── sources/           ← raw, immutable source documents (never modify)
-│   └── .gitkeep
-└── wiki/              ← LLM-maintained knowledge base
-    ├── index.md       ← master content catalog (update on every ingest)
-    ├── log.md         ← append-only chronological event log
-    ├── overview.md    ← high-level synthesis of the entire knowledge base
-    ├── entities/      ← one page per named entity (person, org, place, product…)
-    ├── concepts/      ← one page per key concept, idea, or theme
-    ├── sources/       ← one summary page per ingested source document
-    └── analyses/      ← query answers, comparisons, and explorations worth keeping
+├── CLAUDE.md          ← este arquivo (schema)
+├── sources/           ← fontes brutas e imutáveis (nunca modifique)
+│   └── notas, artigos, transcrições, diários, PDFs em texto
+└── wiki/              ← base de conhecimento mantida pelo LLM
+    ├── index.md       ← catálogo mestre de conteúdo (atualizar em todo ingest)
+    ├── log.md         ← registro cronológico append-only
+    ├── overview.md    ← síntese de alto nível do segundo cérebro
+    ├── people/        ← uma página por pessoa relevante
+    ├── projects/      ← uma página por projeto ativo ou passado
+    ├── goals/         ← metas de curto, médio e longo prazo
+    ├── health/        ← saúde física, mental, hábitos, energia
+    ├── ideas/         ← ideias, insights, hipóteses
+    ├── events/        ← eventos, momentos marcantes, reuniões
+    ├── learnings/     ← aprendizados de livros, cursos, artigos
+    └── resources/     ← ferramentas, links, referências úteis
+        syntheses/     ← sínteses e análises geradas por queries
 ```
 
-**Rule:** The LLM writes and maintains everything under `wiki/`. The user curates `sources/`. Neither touches the other's layer.
+**Regra:** O LLM escreve e mantém tudo dentro de `wiki/`. O usuário alimenta `sources/`. Nenhum toca a camada do outro.
 
 ---
 
-## Wiki Page Conventions
+## Frontmatter (todas as páginas)
 
-### Frontmatter (all pages)
 ```yaml
 ---
-title: Page Title
-type: entity | concept | source | analysis | overview
+title: Título da Página
+type: person | project | goal | health | idea | event | learning | resource | synthesis | overview
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-sources: [source-slug-1, source-slug-2]   # which sources informed this page
+sources: [slug-da-fonte-1, slug-da-fonte-2]
+tags: [tag1, tag2]
 ---
 ```
 
-### Cross-linking
-- Use `[[Page Title]]` (Obsidian wikilink format) for all internal links.
-- Every page must have at least one inbound link from another wiki page or from index.md.
-- Prefer specific link text: `[[Albert Einstein|Einstein's view]]` over bare links.
+## Links internos
 
-### Sections (adapt to page type)
-
-**Entity page** (`wiki/entities/`): Overview, Key Facts, Timeline, Relationships, Open Questions, Sources.
-
-**Concept page** (`wiki/concepts/`): Definition, Why It Matters, Key Arguments/Evidence, Counterarguments, Related Concepts, Open Questions, Sources.
-
-**Source summary page** (`wiki/sources/`): Bibliographic info, Key Takeaways (bullet list), Entities & Concepts Mentioned, Contradictions with existing wiki claims, Raw excerpts worth preserving.
-
-**Analysis page** (`wiki/analyses/`): Question asked, Approach, Answer/Findings, Caveats, Follow-up questions. Filed here so explorations compound.
-
-**Overview page** (`wiki/overview.md`): Evolving thesis, major themes, open questions, last updated date.
+- Use `[[Nome da Página]]` (formato wikilink do Obsidian) para todos os links internos.
+- Toda página deve ter ao menos um link de entrada vindo de outra página ou do index.md.
+- Prefira texto de link específico: `[[João Silva|a visão do João]]`.
 
 ---
 
-## Workflows
+## Tipos de Página
 
-### Ingest a new source
+### `people/` — Pessoa
+Seções: Visão Geral, Relação/Contexto, Características Observadas, Histórico de Interações, Projetos em Comum, Notas Abertas.
 
-1. **Read** the source file in `sources/`.
-2. **Discuss** key takeaways with the user. Ask what to emphasize.
-3. **Write** a summary page at `wiki/sources/<slug>.md`.
-4. **Update** entity and concept pages touched by the source. Create new pages as needed.
-5. **Update** `wiki/overview.md` if the source shifts the overall thesis or introduces a major new theme.
-6. **Update** `wiki/index.md` — add the new source page and any new entity/concept pages.
-7. **Append** to `wiki/log.md`:
-   ```
-   ## [YYYY-MM-DD] ingest | Source Title
-   - Summary page: wiki/sources/<slug>.md
-   - Pages created: …
-   - Pages updated: …
-   - Notable: …
-   ```
+### `projects/` — Projeto
+Seções: Objetivo, Status, Pessoas Envolvidas, Timeline, Decisões Tomadas, Próximos Passos, Aprendizados.
 
-A single ingest typically touches 5–15 wiki pages. That's expected and good.
+### `goals/` — Meta
+Seções: O que quero alcançar, Por quê, Prazo, Métricas de sucesso, Progresso, Obstáculos, Próximas ações.
 
-### Answer a query
+### `health/` — Saúde
+Seções: Contexto, Observações, Padrões Identificados, Hábitos Ativos, O que está funcionando, O que não está.
 
-1. **Read** `wiki/index.md` to find relevant pages.
-2. **Read** those pages.
-3. **Synthesize** an answer with `[[citations]]` to wiki pages.
-4. **Ask** the user: "Should I file this as an analysis page?" If yes, write it to `wiki/analyses/<slug>.md`, update index.md, and append to log.md.
+### `ideas/` — Ideia
+Seções: A ideia em uma frase, Desenvolvimento, Por que pode funcionar, Riscos, Próxima ação para testar.
 
-### Lint the wiki
+### `events/` — Evento
+Seções: Data, Contexto, O que aconteceu, Pessoas envolvidas, Decisões, Aprendizados, Links para projetos/pessoas.
 
-Run periodically or when the user asks. Check for:
-- Contradictions between pages (flag both pages).
-- Stale claims superseded by newer sources.
-- Orphan pages (no inbound links).
-- Concepts mentioned repeatedly but lacking their own page.
-- Missing cross-references between related pages.
-- Data gaps a web search could fill.
+### `learnings/` — Aprendizado
+Seções: Fonte, Conceito Central, Por que importa, Aplicações práticas, Contradições com crenças atuais, Links relacionados.
 
-Report findings as a numbered list. Propose fixes. Ask the user which to action.
+### `resources/` — Recurso
+Seções: Descrição, Link/Localização, Casos de uso, Avaliação, Data de descoberta.
+
+### `syntheses/` — Síntese
+Seções: Pergunta feita, Abordagem, Resposta/Achados, Ressalvas, Perguntas de follow-up. Arquivada para que explorações se acumulem.
 
 ---
 
-## index.md Format
+## Fluxos de Trabalho
 
-index.md is the LLM's navigation tool. Keep it current.
+### Ingerir uma nova fonte
+
+1. **Leia** o arquivo em `sources/`.
+2. **Discuta** os pontos principais com o usuário. Pergunte o que enfatizar.
+3. **Escreva ou atualize** páginas nas categorias relevantes (people, projects, goals, etc.).
+4. **Atualize** `wiki/overview.md` se a fonte mudar a síntese geral.
+5. **Atualize** `wiki/index.md` — adicione páginas novas e atualize as existentes.
+6. **Adicione** ao `wiki/log.md`:
+   ```
+   ## [YYYY-MM-DD] ingest | Título da Fonte
+   - Páginas criadas: …
+   - Páginas atualizadas: …
+   - Destaques: …
+   ```
+
+Um único ingest normalmente toca 5–15 páginas do wiki. Isso é esperado e bom.
+
+### Responder uma query
+
+1. **Leia** `wiki/index.md` para encontrar páginas relevantes.
+2. **Leia** essas páginas.
+3. **Sintetize** uma resposta com `[[citações]]` para páginas do wiki.
+4. **Pergunte** ao usuário: "Devo arquivar isso como uma síntese?" Se sim, escreva em `wiki/syntheses/<slug>.md`, atualize o index.md e adicione ao log.md.
+
+### Lint do wiki
+
+Rode periodicamente ou quando o usuário pedir. Verifique:
+- Contradições entre páginas.
+- Afirmações desatualizadas superadas por fontes mais novas.
+- Páginas órfãs (sem links de entrada).
+- Conceitos mencionados repetidamente mas sem página própria.
+- Links cruzados faltando entre páginas relacionadas.
+- Lacunas que uma busca na web poderia preencher.
+
+Reporte como lista numerada. Proponha correções. Pergunte quais acionar.
+
+---
+
+## Formato do index.md
 
 ```markdown
-# Wiki Index
+# Índice do Wiki
 
-_Last updated: YYYY-MM-DD | Sources ingested: N | Pages: N_
+_Atualizado: YYYY-MM-DD | Fontes ingeridas: N | Páginas: N_
 
-## Overview
-- [[overview]] — Evolving synthesis of the entire knowledge base
+## Visão Geral
+- [[overview]] — Síntese do segundo cérebro
 
-## Sources
-| Page | Title | Date | Key Topics |
-|------|-------|------|------------|
-| [[sources/slug]] | Full Title | YYYY-MM-DD | topic1, topic2 |
+## Pessoas
+| Página | Contexto |
+|--------|----------|
+| [[people/nome]] | uma linha |
 
-## Entities
-| Page | Type | Notes |
-|------|------|-------|
-| [[entities/name]] | person/org/place | one-liner |
+## Projetos
+| Página | Status | Resumo |
+|--------|--------|--------|
+| [[projects/slug]] | ativo/pausado/concluído | uma linha |
 
-## Concepts
-| Page | Notes |
-|------|-------|
-| [[concepts/name]] | one-liner |
+## Metas
+| Página | Prazo | Status |
+|--------|-------|--------|
+| [[goals/slug]] | YYYY-MM | em andamento |
 
-## Analyses
-| Page | Question | Date |
-|------|----------|------|
-| [[analyses/slug]] | What was asked | YYYY-MM-DD |
+## Saúde
+| Página | Tema |
+|--------|------|
+| [[health/slug]] | uma linha |
+
+## Ideias
+| Página | Resumo |
+|--------|--------|
+| [[ideas/slug]] | uma linha |
+
+## Eventos
+| Página | Data | Resumo |
+|--------|------|--------|
+| [[events/slug]] | YYYY-MM-DD | uma linha |
+
+## Aprendizados
+| Página | Fonte | Tema |
+|--------|-------|------|
+| [[learnings/slug]] | livro/artigo/curso | uma linha |
+
+## Recursos
+| Página | Tipo | Resumo |
+|--------|------|--------|
+| [[resources/slug]] | ferramenta/link/ref | uma linha |
+
+## Sínteses
+| Página | Pergunta | Data |
+|--------|----------|------|
+| [[syntheses/slug]] | O que foi perguntado | YYYY-MM-DD |
 ```
 
 ---
 
-## log.md Format
+## Formato do log.md
 
-log.md is append-only. Never edit past entries. Each entry:
+Append-only. Nunca edite entradas passadas.
 
 ```
-## [YYYY-MM-DD] <type> | <title>
-<bullet summary>
+## [YYYY-MM-DD] <tipo> | <título>
+<resumo em bullets>
 ```
 
-Types: `ingest`, `query`, `lint`, `schema-update`.
+Tipos: `ingest`, `query`, `lint`, `schema-update`.
 
-The prefix format `## [YYYY-MM-DD]` makes entries greppable:
-```bash
-grep "^## \[" wiki/log.md | tail -10
-```
+Grep tip: `grep "^## \[" wiki/log.md | tail -10`
 
 ---
 
-## Style Guidelines
+## Diretrizes de Estilo
 
-- Write in clear, direct prose. No filler.
-- Uncertainty is explicit: "as of [source], unclear whether…", "Source A claims X; Source B contradicts this."
-- Contradictions are flagged in-line with a `> ⚠️ Contradiction:` blockquote.
-- Dates are ISO 8601 (YYYY-MM-DD).
-- Slugs are lowercase-kebab-case.
-- Keep pages focused. If a page grows past ~500 lines, consider splitting it.
-
----
-
-## Session Start Checklist
-
-At the start of every session:
-1. Read this file (CLAUDE.md).
-2. Read `wiki/log.md` (last 10 entries) to understand recent activity.
-3. Read `wiki/index.md` to load the current map of the wiki.
-4. Ask the user: "What would you like to work on today — ingest a source, ask questions, or something else?"
+- Escreva em português, de forma clara e direta.
+- Incerteza é explícita: "conforme [fonte], ainda não está claro se…"
+- Contradições são sinalizadas: `> ⚠️ Contradição:` em blockquote.
+- Datas em ISO 8601 (YYYY-MM-DD).
+- Slugs em kebab-case-minúsculo.
+- Se uma página passar de ~400 linhas, considere dividir.
 
 ---
 
-## Evolving This Schema
+## Checklist de Início de Sessão
 
-This file is a living document. When you and the user discover a convention that works well, add it here. When something isn't working, revise it. Append a `schema-update` entry to log.md when you make changes.
+Ao início de cada sessão:
+1. Leia este arquivo (CLAUDE.md).
+2. Leia `wiki/log.md` (últimas 10 entradas) para entender atividade recente.
+3. Leia `wiki/index.md` para carregar o mapa atual do wiki.
+4. Pergunte ao usuário: "Com o que você quer trabalhar hoje — ingerir uma fonte, fazer perguntas, ou outra coisa?"

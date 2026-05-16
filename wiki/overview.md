@@ -1,31 +1,35 @@
 ---
-title: Overview
+title: Visão Geral
 type: overview
 created: 2026-05-16
 updated: 2026-05-16
 sources: []
 ---
 
-# Overview
+# Visão Geral — Segundo Cérebro
 
-_This page is the evolving synthesis of the knowledge base. The LLM updates it as sources are ingested and the thesis develops._
+_Esta página é a síntese evolutiva do segundo cérebro. O Claude a atualiza à medida que fontes são ingeridas e o quadro geral se desenvolve._
 
-## Current Thesis
+## Síntese Atual
 
-_No sources ingested yet. The thesis will form here as material accumulates._
+_Nenhuma fonte ingerida ainda. A síntese se formará aqui conforme o material acumula._
 
-## Major Themes
+## Temas Principais
 
-_To be developed._
+_A desenvolver._
 
-## Open Questions
+## Metas em Foco
 
-_To be developed._
+_A desenvolver._
 
-## What's Missing
+## Perguntas em Aberto
 
-_To be developed — gaps the next sources should address._
+_A desenvolver._
+
+## O que Está Faltando
+
+_A desenvolver — lacunas que as próximas fontes devem endereçar._
 
 ---
 
-_Last substantive update: 2026-05-16 (initial scaffold)_
+_Última atualização substantiva: 2026-05-16 (scaffold inicial)_

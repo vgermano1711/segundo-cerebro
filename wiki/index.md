@@ -1,36 +1,66 @@
 ---
-title: Wiki Index
+title: Índice do Wiki
 type: index
 updated: 2026-05-16
 ---
 
-# Wiki Index
+# Índice do Wiki
 
-_Last updated: 2026-05-16 | Sources ingested: 0 | Pages: 2_
+_Atualizado: 2026-05-16 | Fontes ingeridas: 0 | Páginas: 2_
 
-## Overview
-- [[overview]] — Evolving synthesis of the entire knowledge base
+## Visão Geral
+- [[overview]] — Síntese do segundo cérebro
 
-## Sources
-_No sources ingested yet. Drop files into `sources/` and ask Claude to ingest them._
+## Pessoas
+_Nenhuma página ainda._
 
-| Page | Title | Date | Key Topics |
-|------|-------|------|------------|
+| Página | Contexto |
+|--------|----------|
 
-## Entities
-_No entity pages yet._
+## Projetos
+_Nenhuma página ainda._
 
-| Page | Type | Notes |
-|------|------|-------|
+| Página | Status | Resumo |
+|--------|--------|--------|
 
-## Concepts
-_No concept pages yet._
+## Metas
+_Nenhuma página ainda._
 
-| Page | Notes |
-|------|-------|
+| Página | Prazo | Status |
+|--------|-------|--------|
 
-## Analyses
-_No analyses yet._
+## Saúde
+_Nenhuma página ainda._
 
-| Page | Question | Date |
-|------|----------|------|
+| Página | Tema |
+|--------|------|
+
+## Ideias
+_Nenhuma página ainda._
+
+| Página | Resumo |
+|--------|--------|
+
+## Eventos
+_Nenhuma página ainda._
+
+| Página | Data | Resumo |
+|--------|------|--------|
+
+## Aprendizados
+_Nenhuma página ainda._
+
+| Página | Fonte | Tema |
+|--------|-------|------|
+
+## Recursos
+_Nenhuma página ainda._
+
+| Página | Tipo | Resumo |
+|--------|------|--------|
+
+## Sínteses
+_Nenhuma página ainda._
+
+| Página | Pergunta | Data |
+|--------|----------|------|
