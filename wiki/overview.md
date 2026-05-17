@@ -3,51 +3,63 @@ title: Visão Geral
 type: overview
 created: 2026-05-16
 updated: 2026-05-16
-sources: [sessao-configuracao-2026-05-16]
+sources: [sessao-configuracao-2026-05-16, historico-claude-2026]
 ---
 
 # Visão Geral — Segundo Cérebro de Victor Germano
 
 ## Síntese Atual
 
-Victor está construindo um segundo cérebro pessoal usando o padrão LLM Wiki — uma base de conhecimento persistente onde o Claude Code escreve e mantém páginas interligadas em markdown, navegáveis pelo Obsidian. O sistema foi configurado do zero em 2026-05-16 e realizou seu primeiro ingest no mesmo dia.
+Victor é um desenvolvedor web em consolidação de carreira, com múltiplos projetos ativos — portfólio técnico, clientes no segmento de academias e e-commerce, e uma plataforma SaaS educacional para Direito. Paralelamente, está construindo um segundo cérebro pessoal com Obsidian + Claude Code para organizar todo esse conhecimento de forma persistente.
 
-A visão central: em vez de acumular conhecimento em chats efêmeros e notas soltas, tudo passa pelo wiki — fontes brutas entram em `sources/`, o Claude processa e distribui em páginas estruturadas, e o Obsidian serve como interface visual. O resultado é um exocórtex pessoal que fica mais valioso com cada entrada.
+O perfil emergente: alguém que usa IA como ferramenta central de trabalho — não só para executar tarefas, mas para pensar, organizar e construir sistemas.
 
 ## Temas Principais
 
-### Conhecimento e aprendizado
-- Interesse em padrões de gestão de conhecimento pessoal
-- Adoção do padrão LLM Wiki como framework principal
-- Foco em acumulação progressiva vs consultas pontuais
+### Desenvolvimento Web e Tecnologia
+- Stack técnica: web (frontend/backend), autenticação, painéis admin, deploy SaaS
+- Uso intenso de Claude Code como par de programação
+- Projetos: portfólio, VRV academia, Hype Station, plataforma de Direito
 
-### Tecnologia e ferramentas
-- Stack: Obsidian + Claude Code CLI + Git + GitHub
-- Plataforma: Windows
-- Repositório: `vgermano1711/segundo-c-rebro-obsidian---claude-`
+### Carreira e Presença Profissional
+- Em transição/consolidação para área de programação
+- Otimização de CV, perfil InfoJobs, atualização de cursos
+- Portfólio como principal ativo de demonstração de competência
 
-### Produtividade pessoal
-- Meta de ter clareza sobre projetos, metas, pessoas e aprendizados
-- Sistema de ingest como hábito regular
+### Produtividade e Sistemas Pessoais
+- Construção do segundo cérebro como sistema central
+- Interesse em automação (Gmail, processos)
+- Filosofia: IA como extensão do pensamento, não substituto
+
+### Negócios e Empreendedorismo
+- Trabalho com clientes (academias, e-commerce)
+- Projeto próprio de SaaS educacional (Direito)
+- Capacidade de criar produtos do zero com IA
 
 ## Projetos Ativos
-- [[projects/segundo-cerebro-obsidian-claude]] — o próprio segundo cérebro
+- [[projects/segundo-cerebro-obsidian-claude]] — infraestrutura de conhecimento
+- [[projects/desenvolvimento-web-portfolio]] — portfólio e projetos web
+- [[projects/vrv-academia]] — cliente academia
+- [[projects/hype-station]] — e-commerce
+- [[projects/plataforma-direito]] — SaaS educacional
 
 ## Metas em Foco
-- [[goals/dominar-segundo-cerebro]] — wiki com uso diário estabelecido em 3 meses
+- [[goals/dominar-segundo-cerebro]] — wiki com uso diário em 3 meses
 
 ## Perguntas em Aberto
-- Quais são os projetos ativos de Victor além do segundo cérebro?
-- Quais são as metas de curto e médio prazo?
-- Quais pessoas são mais relevantes na vida e trabalho de Victor?
-- Quais hábitos de saúde Victor quer acompanhar?
+- Qual é o projeto mais prioritário agora — portfólio, cliente ou SaaS?
+- Está buscando emprego, freelance ou construindo negócio próprio?
+- Quais pessoas são centrais na vida profissional e pessoal de Victor?
+- Quais hábitos de saúde e rotina quer acompanhar?
+- O que mais quer aprender nos próximos 6 meses?
 
 ## O que Está Faltando
-- Fontes pessoais: notas, diários, reflexões, metas detalhadas
-- Páginas de pessoas relevantes
+- Páginas de pessoas relevantes (sócios, clientes, mentores)
+- Metas detalhadas de curto e médio prazo
 - Registro de saúde e hábitos
-- Projetos profissionais e pessoais além do segundo cérebro
+- Aprendizados técnicos (linguagens, frameworks estudados)
+- Detalhes de cada projeto (status atual, decisões tomadas)
 
 ---
 
-_Última atualização: 2026-05-16 — após configuração e primeiro ingest_
+_Última atualização: 2026-05-16 — após ingest do histórico de conversas do Claude_
