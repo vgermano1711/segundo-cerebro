@@ -61,3 +61,15 @@ Grep tip: `grep "^## \[" wiki/log.md | tail -10`
   - wiki/resources/carreira-cv.md — CV completo com todos os cursos e stack
   - wiki/index.md — 24 páginas catalogadas
 - Destaques: perfil completo de Victor extraído — Engenharia de Software UNICSUL, stack web completa, 6 projetos documentados em detalhe, ferramentas IA como diferencial de carreira
+
+## [2026-05-17] ingest | Biografia Pessoal de Victor Afonso Germano
+- Páginas atualizadas:
+  - wiki/people/victor-germano.md — reescrita completa com biografia pessoal detalhada
+- Destaques:
+  - Dados pessoais completos: nascimento 17/11/2005, Vila Industrial/SP
+  - Família documentada: vó Nilce, vô Ademir (†2015), mãe Juliana, padrasto Neto (abusivo), irmã Ana Júlia, pai ausente Leandro, tios Luci/Terezinha/Simone, primos Giancarlo e Raul (†2023)
+  - Linha do tempo biográfica 2005–2026: infância sem pai, abuso do padrasto, pandemia/enforcamento (2020), episódio neurológico em SC (2023), internação da vó, abandono da mãe, início na tech
+  - Relacionamentos: Manuela (2021–22), Isis (2024, traição)
+  - Amigos-chave: Caua "Japonês" e Marcelo (CEO Stone)
+  - Carreira atual: HelpDesk Grupo Roveri + proposta Google (16/05/2026)
+  - Características observadas: resiliência, autodidatismo, musculação há 9 anos, lealdade

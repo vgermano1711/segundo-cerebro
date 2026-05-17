@@ -1,12 +1,12 @@
 ---
 title: Índice do Wiki
 type: index
-updated: 2026-05-16
+updated: 2026-05-17
 ---
 
 # Índice do Wiki
 
-_Atualizado: 2026-05-16 | Fontes ingeridas: 3 | Páginas: 24_
+_Atualizado: 2026-05-17 | Fontes ingeridas: 4 | Páginas: 24_
 
 ## Visão Geral
 - [[overview]] — Síntese do segundo cérebro de Victor
@@ -14,7 +14,7 @@ _Atualizado: 2026-05-16 | Fontes ingeridas: 3 | Páginas: 24_
 ## Pessoas
 | Página | Contexto |
 |--------|----------|
-| [[people/victor-germano]] | Victor Afonso Germano — Germano Dev, desenvolvedor web, São Paulo |
+| [[people/victor-germano]] | Victor Afonso Germano — 20 anos, Vila Industrial/SP, dev web, HelpDesk Grupo Roveri, proposta Google |
 
 ## Projetos
 | Página | Status | Resumo |
