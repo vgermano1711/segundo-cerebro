@@ -47,3 +47,17 @@ Grep tip: `grep "^## \[" wiki/log.md | tail -10`
   - wiki/learnings/juros-compostos.md
 - Páginas atualizadas: wiki/overview.md, wiki/index.md
 - Destaques: 22 conversas de março a maio de 2026 processadas — padrão dominante é desenvolvimento web com foco em portfólio e projetos de clientes; carreira em transição para programação; interesse em IA aplicada
+
+## [2026-05-16] ingest | Conteúdo detalhado das 22 conversas do Claude
+- Páginas criadas:
+  - wiki/people/victor-germano.md — perfil completo com stack, idiomas, formação, projetos
+  - wiki/projects/bolsopro.md — app financeiro com Firebase e assinatura
+  - wiki/projects/germano-dev-portfolio.md — portfólio Germano Dev com sistema admin
+  - wiki/projects/academia-agits.md — site Academia Agit's
+  - wiki/resources/ferramentas-ia-criativas.md — Krea.AI, Runway, Gamma, N8N, Bolt, Replit
+- Páginas atualizadas:
+  - wiki/projects/hype-station.md — detalhes completos ASN Supply
+  - wiki/projects/vrv-academia.md — PptxGenJS confirmado
+  - wiki/resources/carreira-cv.md — CV completo com todos os cursos e stack
+  - wiki/index.md — 24 páginas catalogadas
+- Destaques: perfil completo de Victor extraído — Engenharia de Software UNICSUL, stack web completa, 6 projetos documentados em detalhe, ferramentas IA como diferencial de carreira

@@ -6,19 +6,27 @@ updated: 2026-05-16
 
 # Índice do Wiki
 
-_Atualizado: 2026-05-16 | Fontes ingeridas: 2 | Páginas: 17_
+_Atualizado: 2026-05-16 | Fontes ingeridas: 3 | Páginas: 24_
 
 ## Visão Geral
 - [[overview]] — Síntese do segundo cérebro de Victor
+
+## Pessoas
+| Página | Contexto |
+|--------|----------|
+| [[people/victor-germano]] | Victor Afonso Germano — Germano Dev, desenvolvedor web, São Paulo |
 
 ## Projetos
 | Página | Status | Resumo |
 |--------|--------|--------|
 | [[projects/segundo-cerebro-obsidian-claude]] | ativo | Segundo cérebro pessoal com Obsidian + Claude Code |
-| [[projects/desenvolvimento-web-portfolio]] | ativo | Portfólio, SaaS e projetos web em desenvolvimento |
-| [[projects/vrv-academia]] | registrado | Apresentação VRV para rede de academias |
-| [[projects/hype-station]] | registrado | Branding e e-commerce Hype Station |
-| [[projects/plataforma-direito]] | registrado | Plataforma de estudos para Direito com IA |
+| [[projects/germano-dev-portfolio]] | ativo | Portfólio profissional com dashboards e sistema admin |
+| [[projects/bolsopro]] | em desenvolvimento | App financeiro com Firebase e sistema de assinatura |
+| [[projects/academia-agits]] | ativo | Site da Academia Agit's — academiaagits.com.br |
+| [[projects/hype-station]] | desenvolvido | E-commerce ASN Supply — roupas e tênis |
+| [[projects/vrv-academia]] | concluído | Apresentação PowerPoint para rede de academias VRV |
+| [[projects/plataforma-direito]] | registrado | Plataforma SaaS de estudos para Direito com IA |
+| [[projects/desenvolvimento-web-portfolio]] | ativo | Consolidação de projetos web e clientes |
 
 ## Metas
 | Página | Prazo | Status |
@@ -46,11 +54,9 @@ _Atualizado: 2026-05-16 | Fontes ingeridas: 2 | Páginas: 17_
 | Página | Tipo | Resumo |
 |--------|------|--------|
 | [[resources/ferramentas-segundo-cerebro]] | ferramentas | Obsidian, Claude Code CLI, Git, Node.js |
-| [[resources/carreira-cv]] | carreira | CV, perfil profissional, recolocação em programação |
+| [[resources/carreira-cv]] | carreira | CV detalhado, InfoJobs, estratégia de recolocação |
+| [[resources/ferramentas-ia-criativas]] | ferramentas IA | Krea.AI, Runway, Gamma, N8N, Bolt, Replit |
 | [[resources/automacao-gmail]] | automação | Automação da caixa de entrada do Gmail |
-
-## Pessoas
-_Nenhuma página ainda — adicione pessoas relevantes._
 
 ## Saúde
 _Nenhuma página ainda._

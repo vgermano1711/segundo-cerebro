@@ -4,39 +4,66 @@ type: resource
 created: 2026-03-31
 updated: 2026-05-16
 sources: [historico-claude-2026]
-tags: [carreira, cv, programacao, infojobs, recolocacao]
+tags: [carreira, cv, programacao, infojobs, recolocacao, junior]
 ---
 
 # Carreira — CV, Perfil Profissional e Recolocação
 
-## Contexto
-Victor investiu tempo entre março e maio de 2026 otimizando sua presença profissional para a área de programação — reformulando CV, otimizando perfil no InfoJobs e atualizando cursos.
+## Objetivo de Carreira
+Conseguir **estágio ou vaga de programador júnior** em desenvolvimento web, enquanto constrói portfólio e atende clientes como freelancer.
 
-## O que foi trabalhado
+## CV Atual — Principais Elementos
 
-### Reformulação de CV para Área de Programação
-- **Data:** 2026-04-10
-- Reescrita do currículo com foco em desenvolvimento web
-- Destaque para projetos e habilidades técnicas
+### Formação
+- Engenharia de Software — Universidade Cruzeiro do Sul
 
-### Otimizar Perfil e CV no InfoJobs
-- **Data:** 2026-03-31
-- Otimização do perfil na plataforma InfoJobs
-- Palavras-chave, apresentação, destaque de experiências
+### Idiomas
+- Português — nativo
+- Inglês — intermediário
+- Espanhol — avançado
 
-### Análise e Atualização de Cursos no CV
-- **Data:** 2026-05-15
-- Revisão dos cursos listados no currículo
-- Identificação de certificações relevantes para destacar
+### Stack Técnica no CV
+- Frontend: HTML, CSS, JavaScript, React
+- Backend: PHP
+- Firebase, localStorage, Chart.js
+- Deploy: Vercel, Netlify, Render
 
-## Padrão Observado
-Victor está em transição ou consolidação de carreira para programação/desenvolvimento web — investe em portfólio técnico, otimiza presença em plataformas de emprego e atualiza formação continuamente.
+### Ferramentas de IA (diferencial)
+- Claude Code / Cowork
+- N8N (automação)
+- Krea.AI, Runway ML, IdeaMap.AI, Gamma, Bolt.AI, Replit
+
+### Cursos
+- Claude 101 — Anthropic
+- Competência Transversal — SENAI
+- Lógica de Programação (múltiplos)
+
+### Projetos no CV
+- BolsoPro (app financeiro)
+- Germano Dev Portfolio
+- Academia Agit's
+- Alma Estudos Visuais
+- TypeOn
+- Pringles
+
+## Plataformas Usadas
+- **InfoJobs** — perfil otimizado com palavras-chave técnicas
+- **LinkedIn** — capa personalizada criada
+- **Portfólio online** — germanodev-portfolio.netlify.app
+
+## Iterações do CV
+| Data | O que mudou |
+|------|-------------|
+| 2026-03-31 | Versão inicial otimizada para InfoJobs |
+| 2026-04-10 | Reformulação para estágio/júnior em programação — versão DOCX preto/branco sem ícones |
+| 2026-05-15 | Adição de cursos Claude 101, SENAI, ferramentas IA, React, N8N |
 
 ## Notas Abertas
-- Qual é o nível atual de experiência em desenvolvimento?
-- Quais tecnologias são o foco principal?
-- Está buscando emprego, freelance ou construindo negócio próprio?
+- Está ativamente buscando vagas ou focando em freelance/produtos próprios?
+- Qual tecnologia quer aprofundar para se destacar?
+- Qual tipo de empresa é o alvo ideal?
 
 ## Links
-- [[projects/desenvolvimento-web-portfolio]] — portfólio que sustenta a carreira
-- [[goals/dominar-segundo-cerebro]] — organizar aprendizados de carreira no wiki
+- [[people/victor-germano]] — perfil completo
+- [[projects/germano-dev-portfolio]] — portfólio referenciado no CV
+- [[resources/ferramentas-ia-criativas]] — ferramentas listadas como diferencial
