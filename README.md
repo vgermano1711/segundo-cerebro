@@ -6,7 +6,7 @@
 
 ## 📌 Sobre o Projeto
 
-Sistema de **Segundo Cérebro** — metodologia de organização do conhecimento pessoal inspirada no conceito de *Building a Second Brain* (Tiago Forte), integrando Obsidian com Claude AI para processar, resumir e expandir o conhecimento acumulado.
+Sistema de **Segundo Cérebro** inspirado na metodologia *Building a Second Brain* (Tiago Forte), integrando Obsidian com Claude AI para processar, resumir e expandir o conhecimento acumulado.
 
 ---
 
@@ -33,8 +33,8 @@ Sistema de **Segundo Cérebro** — metodologia de organização do conhecimento
 
 ```
 segundo-cerebro/
-├── abrir-claude.bat     # Script para abrir o Claude integrado ao vault
-├── sincronizar.bat      # Script de sincronização automática das notas
+├── abrir-claude.bat     # Abre o Claude integrado ao vault do Obsidian
+├── sincronizar.bat      # Sincronização automática das notas
 ├── AGENTS.md            # Configuração dos agentes de IA
 ├── CLAUDE.md            # Instruções e contexto para o Claude AI
 ├── sources/             # Fontes e referências externas
@@ -54,3 +54,4 @@ Baseado na metodologia **PARA** (Projects, Areas, Resources, Archive) e no conce
 **Victor Germano** — Produtividade & IA Aplicada
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/victor-germano-65787b2b1/)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=flat&logo=whatsapp&logoColor=white)](https://wa.me/5511953570476)
