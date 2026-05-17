@@ -10,8 +10,8 @@ echo.
 
 cd /d "%~dp0"
 
-echo [1/3] Baixando atualizacoes do Claude...
-git pull origin claude/llm-wiki-pattern-xg5c7
+echo [1/3] Baixando atualizacoes do GitHub...
+git pull origin main
 if errorlevel 1 (
     echo.
     echo AVISO: Erro ao sincronizar. Verifique sua conexao.
