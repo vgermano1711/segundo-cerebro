@@ -1,12 +1,12 @@
 # 🧠 Segundo Cérebro — Obsidian + Claude AI
 
-Setup completo de **produtividade e gestão de conhecimento** combinando o poder do **Obsidian** com a inteligência do **Claude AI**.
+> Setup pessoal de produtividade combinando Obsidian e Claude AI para captura e gestão de conhecimento.
 
 ---
 
 ## 📌 Sobre o Projeto
 
-Sistema de **Segundo Cérebro** — metodologia de organização do conhecimento pessoal inspirada no conceito de *Building a Second Brain* (Tiago Forte), integrando Obsidian com Claude AI.
+Sistema de **Segundo Cérebro** — metodologia de organização do conhecimento pessoal inspirada no conceito de *Building a Second Brain* (Tiago Forte), integrando Obsidian com Claude AI para processar, resumir e expandir o conhecimento acumulado.
 
 ---
 
@@ -29,12 +29,16 @@ Sistema de **Segundo Cérebro** — metodologia de organização do conhecimento
 
 ---
 
-## 📁 Como Usar
+## 📁 Estrutura do Repositório
 
-```bash
-git clone https://github.com/vgermano1711/Segundo-c-rebro-Obsidian---Claude-.git
-# Abra a pasta como vault no Obsidian
-# Execute os scripts .bat conforme a documentação interna
+```
+segundo-cerebro/
+├── abrir-claude.bat     # Script para abrir o Claude integrado ao vault
+├── sincronizar.bat      # Script de sincronização automática das notas
+├── AGENTS.md            # Configuração dos agentes de IA
+├── CLAUDE.md            # Instruções e contexto para o Claude AI
+├── sources/             # Fontes e referências externas
+└── wiki/                # Base de conhecimento organizada
 ```
 
 ---
