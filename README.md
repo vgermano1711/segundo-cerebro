@@ -29,6 +29,16 @@ Sistema de **Segundo Cérebro** — metodologia de organização do conhecimento
 
 ---
 
+## 📁 Como Usar
+
+```bash
+git clone https://github.com/vgermano1711/Segundo-c-rebro-Obsidian---Claude-.git
+# Abra a pasta como vault no Obsidian
+# Execute os scripts .bat conforme a documentação interna
+```
+
+---
+
 ## 💡 Inspiração
 
 Baseado na metodologia **PARA** (Projects, Areas, Resources, Archive) e no conceito de **Zettelkasten** para conexão de ideias.
@@ -39,4 +49,4 @@ Baseado na metodologia **PARA** (Projects, Areas, Resources, Archive) e no conce
 
 **Victor Germano** — Produtividade & IA Aplicada
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/seu-linkedin)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/victor-germano-65787b2b1/)
