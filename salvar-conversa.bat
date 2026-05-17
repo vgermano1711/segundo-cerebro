@@ -1,9 +1,9 @@
 @echo off
-title Segundo Cerebro — Sincronizando...
-color 0A
+title Segundo Cerebro — Salvando Conversa...
+color 0B
 echo.
 echo ========================================
-echo   SEGUNDO CEREBRO — Sincronizacao
+echo   SEGUNDO CEREBRO — Salvar Conversa
 echo ========================================
 echo.
 cd /d "%~dp0"
@@ -14,24 +14,13 @@ if not exist config.env (
 for /f "tokens=2 delims==" %%a in ('findstr "GITHUB_TOKEN" config.env') do set TOKEN=%%a
 for /f "tokens=2 delims==" %%a in ('findstr "GITHUB_USER" config.env') do set USER=%%a
 for /f "tokens=2 delims==" %%a in ('findstr "GITHUB_REPO" config.env') do set REPO=%%a
-echo [1/4] Baixando notas do Claude...
+echo [1/2] Baixando nota salva pelo Claude...
 git pull "https://%TOKEN%@github.com/%USER%/%REPO%.git" main
 echo.
-echo [2/4] Verificando alteracoes locais...
-git add -A
-git diff --cached --quiet
-if errorlevel 1 (
-    echo [3/4] Salvando alteracoes locais...
-    git commit -m "sync: vault atualizado em %date% %time%"
-    git push "https://%TOKEN%@github.com/%USER%/%REPO%.git" HEAD:main
-) else (
-    echo [3/4] Nenhuma alteracao local.
-)
-echo.
-echo [4/4] Abrindo Obsidian...
+echo [2/2] Abrindo Obsidian...
 start "" "obsidian://open?path=%~dp0"
 echo.
 echo ========================================
-echo   Pronto!
+echo   Nota disponivel no Obsidian!
 echo ========================================
 timeout /t 3 /nobreak >nul
