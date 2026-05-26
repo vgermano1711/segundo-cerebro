@@ -10,18 +10,29 @@ echo.
 
 cd /d "%~dp0"
 
-echo [1/3] Baixando atualizacoes do GitHub...
-git pull origin main
+echo [1/3] Buscando atualizacoes do GitHub...
+git fetch origin claude/llm-wiki-pattern-xg5c7
 if errorlevel 1 (
     echo.
-    echo AVISO: Erro ao sincronizar. Verifique sua conexao.
-    echo Abrindo Obsidian com a versao local...
+    echo AVISO: Erro ao buscar atualizacoes. Verifique sua conexao.
+    goto :abrir
 )
 
 echo.
-echo [2/3] Sincronizacao concluida!
-echo.
+echo [2/3] Aplicando atualizacoes (sobreescrevendo local com remoto)...
+git checkout claude/llm-wiki-pattern-xg5c7
+git reset --hard origin/claude/llm-wiki-pattern-xg5c7
+if errorlevel 1 (
+    echo.
+    echo AVISO: Erro ao aplicar atualizacoes.
+    goto :abrir
+)
 
+echo.
+echo Sincronizacao concluida com sucesso!
+
+:abrir
+echo.
 echo [3/3] Abrindo Obsidian...
 start "" "obsidian://open?path=%~dp0"
 
