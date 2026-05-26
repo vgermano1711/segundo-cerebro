@@ -6,7 +6,7 @@ updated: 2026-05-16
 
 # Índice do Wiki
 
-_Atualizado: 2026-05-16 | Fontes ingeridas: 3 | Páginas: 24_
+_Atualizado: 2026-05-16 | Fontes ingeridas: 3 | Páginas: 28_
 
 ## Visão Geral
 - [[overview]] — Síntese do segundo cérebro de Victor
@@ -20,13 +20,13 @@ _Atualizado: 2026-05-16 | Fontes ingeridas: 3 | Páginas: 24_
 | Página | Status | Resumo |
 |--------|--------|--------|
 | [[projects/segundo-cerebro-obsidian-claude]] | ativo | Segundo cérebro pessoal com Obsidian + Claude Code |
-| [[projects/germano-dev-portfolio]] | ativo | Portfólio profissional com dashboards e sistema admin |
-| [[projects/bolsopro]] | em desenvolvimento | App financeiro com Firebase e sistema de assinatura |
-| [[projects/academia-agits]] | ativo | Site da Academia Agit's — academiaagits.com.br |
-| [[projects/hype-station]] | desenvolvido | E-commerce ASN Supply — roupas e tênis |
-| [[projects/vrv-academia]] | concluído | Apresentação PowerPoint para rede de academias VRV |
-| [[projects/plataforma-direito]] | registrado | Plataforma SaaS de estudos para Direito com IA |
-| [[projects/desenvolvimento-web-portfolio]] | ativo | Consolidação de projetos web e clientes |
+| [[projects/germano-dev-portfolio]] | ativo | Portfólio com CMS admin, dashboards Chart.js e PDF profissional |
+| [[projects/bolsopro]] | em desenvolvimento | App financeiro Firebase + Google Auth + PIX/boleto/cartão |
+| [[projects/academia-agits]] | ativo | Site academiaagits.com.br — edição via Claude in Chrome |
+| [[projects/hype-station]] | desenvolvido | E-commerce ASN Supply — frete CEP, metrô SP, admin |
+| [[projects/vrv-academia]] | concluído | Apresentação PowerPoint VRV com PptxGenJS |
+| [[projects/plataforma-direito]] | ideia | Plataforma SaaS de estudos para Direito com IA |
+| [[projects/desenvolvimento-web-portfolio]] | referência | Consolidação de todos os projetos web |
 
 ## Metas
 | Página | Prazo | Status |
@@ -49,17 +49,21 @@ _Atualizado: 2026-05-16 | Fontes ingeridas: 3 | Páginas: 24_
 |--------|-------|------|
 | [[learnings/llm-wiki-pattern]] | Artigo LLM Wiki | Padrão para bases de conhecimento com LLM |
 | [[learnings/juros-compostos]] | Conversa Claude | Educação financeira — juros compostos |
+| [[learnings/padrao-admin-cms-discreto]] | Projetos próprios | CMS sem backend via localStorage + duplo clique |
+| [[learnings/deploy-dominios-web]] | Conversa Claude | Deploy Netlify/Vercel/Render + domínios Registro.br |
 
 ## Recursos
 | Página | Tipo | Resumo |
 |--------|------|--------|
 | [[resources/ferramentas-segundo-cerebro]] | ferramentas | Obsidian, Claude Code CLI, Git, Node.js |
-| [[resources/carreira-cv]] | carreira | CV detalhado, InfoJobs, estratégia de recolocação |
+| [[resources/carreira-cv]] | carreira | CV completo, InfoJobs, estratégia de recolocação |
 | [[resources/ferramentas-ia-criativas]] | ferramentas IA | Krea.AI, Runway, Gamma, N8N, Bolt, Replit |
-| [[resources/automacao-gmail]] | automação | Automação da caixa de entrada do Gmail |
-
-## Saúde
-_Nenhuma página ainda._
+| [[resources/automacao-gmail]] | automação | Filtros, Zapier, Google Apps Script para Gmail |
 
 ## Sínteses
+| Página | Pergunta | Data |
+|--------|----------|------|
+| [[syntheses/analise-conversas-claude-2026]] | Quais padrões emergem das 22 conversas com Claude? | 2026-05-16 |
+
+## Saúde
 _Nenhuma página ainda._

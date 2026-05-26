@@ -61,3 +61,15 @@ Grep tip: `grep "^## \[" wiki/log.md | tail -10`
   - wiki/resources/carreira-cv.md — CV completo com todos os cursos e stack
   - wiki/index.md — 24 páginas catalogadas
 - Destaques: perfil completo de Victor extraído — Engenharia de Software UNICSUL, stack web completa, 6 projetos documentados em detalhe, ferramentas IA como diferencial de carreira
+
+## [2026-05-16] ingest | Análise profunda das 22 conversas — conteúdo completo
+- Páginas criadas:
+  - wiki/syntheses/analise-conversas-claude-2026.md — análise completa com padrões, linha do tempo, projetos
+  - wiki/learnings/padrao-admin-cms-discreto.md — padrão recorrente de CMS sem backend
+  - wiki/learnings/deploy-dominios-web.md — Netlify/Vercel/Render + Registro.br
+- Páginas atualizadas:
+  - wiki/people/victor-germano.md — stack completa (TypeScript, Python, C#, MySQL, Figma)
+  - wiki/projects/bolsopro.md — detalhes completos: pierre.finance, Firebase, PIX/boleto/cartão, SAC
+  - wiki/projects/germano-dev-portfolio.md — CMS editor lateral, PDF ReportLab, URLs reais
+  - wiki/index.md — 28 páginas catalogadas
+- Destaques: padrões identificados — admin discreto (duplo clique + localStorage), design dark/minimalista, construção incremental com Claude, preferência por zero backend
